@@ -1,0 +1,12 @@
+x=int(input())
+y=int(input())
+z=int(input())
+a=3
+b=2
+c=0
+if x==y and y==z and x==z:
+    print(a)
+elif x==y or y==z or x==z:
+    print(b)
+else:
+    print(c)
