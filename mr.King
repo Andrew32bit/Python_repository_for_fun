@@ -1,0 +1,11 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+# надо опять сравнивать a и с , b и d
+if a - c == 2  or a - c == -2  or   b - d == 2  or b - d == -2 :
+    print("NO")
+elif a - c == 1 or a - c == -1 or b - d == 1 or b - d == -1:
+    print("YES")
+else:
+    print("NO")
