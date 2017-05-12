@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+x1 = a + b
+x2 = c + d
+if x1 == x2 or (abs(x1 - x2)%2 == 0 and a!=c and b!=d and a!=7) :
+    print("YES")
+else:
+    print("NO")
