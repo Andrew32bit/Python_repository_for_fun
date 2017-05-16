@@ -2,9 +2,8 @@ x = int(input())
 if x%2!=0:
     y = x*45 + (20*(x-1)/2)
     y1 = int(y /60) + 9 
-    print(y1,y%60)
+    print(y1,int(y%60))
 else:
     y = x*45 + ((20*(x-1)/2) -5)
-    y1 = int(y /60) + 9 
-    print(y1,y%60)
-    
+    y1 = int(int(y /60) + 9) 
+    print(y1,int(y%60))
