@@ -1,0 +1,7 @@
+p =int(input())#%
+x =int(input())#rub
+y =int(input())#kop
+ob = x + (y/100)#sum rub+kop
+x1 = (p*ob)/100 + ob# % + sum  
+x2 = x1 - int(x1) # целая часть
+print(int(x1),int(round(x2,4)*100))
