@@ -1,0 +1,6 @@
+n = int(input())
+fac= 1
+for i in range(n):
+    i+=1
+    fac = fac * i 
+print(fac)
