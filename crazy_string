@@ -1,0 +1,6 @@
+s = input()
+l = len(s)
+for i in range(l%2==0):
+    print(s[int((len(s))/2):] + s[:int((len(s))/2)])
+for i in range(l%2!=0):
+    print(s[int((len(s)+1)/2):] + s[:int((len(s)+1)/2)] )
