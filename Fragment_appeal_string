@@ -1,0 +1,4 @@
+s=input()
+f = s[s.find('h')+1:s.rfind('h')]
+print(s[0:s.find('h')+1]+f[::-1]+s[s.rfind('h'):])
+'''you can also use this as DEF'''
