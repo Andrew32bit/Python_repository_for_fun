@@ -1,0 +1,11 @@
+a = int(input())
+list=[]
+Sum = 0
+while a != 0:
+    list.append(a)
+    if a == 0:
+        break
+    a = int(input())
+for i in list:
+    Sum = Sum + i
+print(Sum)
