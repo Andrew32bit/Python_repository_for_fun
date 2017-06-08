@@ -1,0 +1,4 @@
+from math import sqrt,floor
+n = int(input())
+f = (1 + sqrt(5))/2
+print(floor(((f**n/sqrt(5)) + (1/2))))
