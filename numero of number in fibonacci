@@ -1,0 +1,13 @@
+a = int(input())
+f1 = 1
+f2 = 1
+n = 2
+while f1 < a:
+    f1 = f1+f2
+    f2=f1-f2
+    n=n+1
+    if a==f1:
+        print(n)
+        break
+else:
+    print('-1')
