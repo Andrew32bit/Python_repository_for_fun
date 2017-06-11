@@ -1,0 +1,16 @@
+from math import sqrt
+a = int(input())
+list=[]
+Sum = 0
+Sum2=0
+while a != 0:
+    list.append(a)
+    if a == 0:
+        break
+    a = int(input())
+for i in list:
+    Sum = Sum + i
+s = Sum/len(list) # среднее арифметическое
+for i in list:
+    Sum2+=(i - s)**2 #прогрессия под корнем,аналогичной сумме всех чисел 
+print(sqrt(Sum2/(len(list)-1)))
