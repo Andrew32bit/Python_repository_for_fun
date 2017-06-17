@@ -1,0 +1,6 @@
+a = [int(i) for i in input().split()]#army squad
+s = int(input())#height of petr
+a.append(s) 
+a.sort()
+a.reverse()
+print(a.index(s)+a.count(s))#his place in army squad
