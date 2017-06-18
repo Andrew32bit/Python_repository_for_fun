@@ -1,0 +1,12 @@
+from itertools import combinations
+a = [int(i) for i in input().split()]
+s=[]
+x=0
+for combo in combinations(a, 2):
+    s.append(combo)
+a = set(s)
+f=list(a)
+for i,j in s:
+    if i==j:
+        x+=1
+print(x)
