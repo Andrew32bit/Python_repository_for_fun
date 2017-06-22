@@ -1,0 +1,6 @@
+from math import sqrt,floor
+def fib(n):
+    f = (1 + sqrt(5))/2
+    x =floor(((f**n/sqrt(5)) + (1/2)))
+    return x
+print (fib(int(input())))
