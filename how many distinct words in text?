@@ -1,0 +1,8 @@
+import itertools
+n=int(input())
+f=[]
+for i in range(n):
+    y=[str(i) for i in input().split()]
+    f.append(y)
+m= list(itertools.chain(*f))
+print(len(set(m)))
