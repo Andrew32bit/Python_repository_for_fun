@@ -1,0 +1,19 @@
+a = [int(i) for i in input().split()] #количество кубиков у пети и ани
+n = a[0]#количество у Ани кубиков
+m=a[1]#количество у Пети кубиков
+an=[]
+petr=[]
+for i in range(n):
+    x = int(input())
+    an.append(x)
+for j in range(m):
+    f = int(input())
+    petr.append(f)
+print(len(set(an)&set(petr)))#первый ответ,количество совпадающих символов
+print(' '.join([str(i) for i in set(an)&set(petr)]))#сами совпадающие символы
+print(len(list(set(an)-(set(an)&set(petr)))))#количество у Ани
+an1=list(set(an)-(set(an)&set(petr)))
+an1.sort()
+print(' '.join([str(i) for i in an1]))#сами кубики Ани
+print(len(list(set(petr)-(set(an)&set(petr)))))#количество у Пети
+print(' '.join([str(i) for i in list(set(petr)-(set(an)&set(petr)))]))#cами кубики Пети
